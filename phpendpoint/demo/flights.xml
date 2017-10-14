@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flights>
+    <flight>
+        <id><![CDATA[LH171]]></id>
+        <departure>
+            <location><![CDATA[Berlin - Tegel, Germany]]></location>
+            <datetime><![CDATA[2017-10-15 16:00]]></datetime>
+            <lat><![CDATA[52.558833]]></lat>
+            <lon><![CDATA[13.288437]]></lon>
+            <gate><![CDATA[A08]]></gate>
+        </departure>
+        <arrival>
+            <location><![CDATA[Frankfurt/Main International, Germany]]></location>
+            <datetime><![CDATA[2017-10-15 ]]></datetime>
+            <lat><![CDATA[50.0379326]]></lat>
+            <lon><![CDATA[8.562151800000038]]></lon>
+            <gate><![CDATA[A28]]></gate>
+        </arrival>
+    </flight>
+    
+    <flight>
+        <id><![CDATA[LH173]]></id>
+        <departure>
+            <location><![CDATA[Berlin - Tegel, Germany]]></location>
+            <datetime><![CDATA[2017-10-15 19:00]]></datetime>
+            <lat><![CDATA[52.558833]]></lat>
+            <lon><![CDATA[13.288437]]></lon>
+            <gate><![CDATA[B08]]></gate>
+        </departure>
+        <arrival>
+            <location><![CDATA[Dubai International Airport - Dubai - United Arab Emirates]]></location>
+            <datetime><![CDATA[2017-10-16 00:30]]></datetime>
+            <lat><![CDATA[25.2531745]]></lat>
+            <lon><![CDATA[55.3656728]]></lon>
+            <gate><![CDATA[B34]]></gate>
+        </arrival>
+    </flight>
+    
+</flights>
