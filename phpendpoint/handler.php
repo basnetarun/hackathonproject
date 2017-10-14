@@ -37,13 +37,12 @@ dispatch('/getairport/:lat/:lng', 'findairport');
         $response                = $google_places->nearbySearch();
         $results    = "";
         if(is_array($response) && !empty($response)) {
-            $results['response']        = 'OK';
-            $results['airport_name']    = $response["results"][0]['name'];
+            //$results['response_code']        = 'OK';
+            $results["airport_name"] = $response["results"][0]['name'];
             
         }
         else {
-            $results['response']    = 'NO_DATA';
-            $results['error']       = 'Error retrieving airport name, please check your location.';
+            $results["airport_name"] = "";
         }
         // Decode the response.
         $object = json_encode ( $results );
@@ -59,8 +58,8 @@ dispatch('/getairport/:lat/:lng', 'findairport');
         
     };
 
- dispatch('/getjetlag/:flight', 'getjetlag');
-    function getjetlag() {
+ dispatch('/getflight/:flight', 'getflight');
+    function getflight() {
         $flight = strtoupper(params("flight"));
         
         /* read and handle xml */
@@ -68,13 +67,25 @@ dispatch('/getairport/:lat/:lng', 'findairport');
         
         $xmlstr = file_get_contents($source);
         $xmlcont = new SimpleXMLElement($xmlstr);
-        
-        foreach($xmlcont as $node) 
+        $response = array();
+        foreach($xmlcont->flight as $node) 
         {
-          echo($node->id);
+            
+            $response['airport_name']   = $node->departure['location']->__toString();
+            $response['departure']      = $node->departure['datetime'];
         }
         
+        if(is_array($response) && !empty($response)) {
+            $results['response_code']        = 'OK';
+            $results['response']    = $response;
+            
+        }
+        else {
+            $results['response_code']    = 'NO_DATA';
+            $results['error']       = 'Error retrieving airport name, please check your location.';
+        }
         
+        return json_encode( $response);
         
     }
 
