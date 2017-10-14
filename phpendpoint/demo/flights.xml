@@ -11,7 +11,7 @@
         </departure>
         <arrival>
             <location><![CDATA[Frankfurt/Main International, Germany]]></location>
-            <datetime><![CDATA[2017-10-15 ]]></datetime>
+            <datetime><![CDATA[2017-10-15 18:15]]></datetime>
             <lat><![CDATA[50.0379326]]></lat>
             <lon><![CDATA[8.562151800000038]]></lon>
             <gate><![CDATA[A28]]></gate>
