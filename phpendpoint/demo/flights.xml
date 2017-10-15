@@ -3,10 +3,10 @@
     <flight>
         <id><![CDATA[LH171]]></id>
         <departure>
-            <location><![CDATA[Berlin - Tegel, Germany]]></location>
+            <location><![CDATA[London - Heathrow Airport, UK]]></location>
             <datetime><![CDATA[2017-10-15 16:00]]></datetime>
-            <lat><![CDATA[52.558833]]></lat>
-            <lon><![CDATA[13.288437]]></lon>
+            <lat><![CDATA[51.470728]]></lat>
+            <lon><![CDATA[-0.457786]]></lon>
             <gate><![CDATA[A08]]></gate>
         </departure>
         <arrival>
@@ -21,10 +21,10 @@
     <flight>
         <id><![CDATA[LH173]]></id>
         <departure>
-            <location><![CDATA[Berlin - Tegel, Germany]]></location>
+            <location><![CDATA[London - Heathrow Airport, UK]]></location>
             <datetime><![CDATA[2017-10-15 19:00]]></datetime>
-            <lat><![CDATA[52.558833]]></lat>
-            <lon><![CDATA[13.288437]]></lon>
+            <lat><![CDATA[51.470728]]></lat>
+            <lon><![CDATA[-0.457786]]></lon>
             <gate><![CDATA[B08]]></gate>
         </departure>
         <arrival>
