@@ -1,0 +1,23 @@
+{
+  "name": "my-theme",
+  "description": "For the Love of Coding",
+  "license": "UNLICENSED",
+  "repository": {
+    "name": "hackathon",
+    "private": true
+  },
+  "author": "Arun Basnet <zarunbasnet@gmail.com>",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "chalk": "latest",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-cli": "^1.4.0",
+    "gulp-debug": "latest",
+    "gulp-eslint": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "path": "latest"
+  },
+  "dependencies": {}
+}
